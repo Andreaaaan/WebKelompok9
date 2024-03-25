@@ -1,0 +1,66 @@
+
+
+
+.container {
+    text-align: center;
+    font-family: calibri;
+}
+.navbar-nav a {
+    color: white;
+    font-weight: bold;
+}
+.navbar-nav a:hover{
+    color: green;
+}
+.navbar-nav a.active,
+.navbar-nav a:hover {
+    color: green !important;
+}
+/* style.css */
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: lightseagreen;
+}
+
+.navbar-brand img {
+    max-width: 50px;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Transaction item styling */
+.transaction-item {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .navbar-toggler {
+        order: -1;
+    }
+}
+#userGreeting {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+    

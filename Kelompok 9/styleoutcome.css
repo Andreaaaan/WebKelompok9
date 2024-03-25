@@ -1,0 +1,82 @@
+.container {
+    text-align: center;
+    font-family: calibri;
+}
+.navbar-nav a {
+    color: white;
+    font-weight: bold;
+}
+.navbar-nav a:hover{
+    color: green;
+}
+.navbar-nav a.active,
+.navbar-nav a:hover {
+    color: green !important;
+}
+body {
+    background-color:#73cec3 ; /* Set latar belakang putih */
+}
+.container1 {
+    position: relative; /* Tetapkan posisi relatif */
+    z-index: 2; /* Pastikan konten berada di depan lapisan latar belakang */
+    background-color: rgba(255, 255, 255, 0.5); /* Warna latar belakang dengan opacity */
+    border-radius: 5px; /* Tambahkan border-radius sesuai kebutuhan */
+    padding: 20px; /* Tambahkan padding sesuai kebutuhan */
+    backdrop-filter: blur(2px); /* Efek blur untuk background */
+}
+.outcome-transaction {
+    background-color: #ffcccc; /* Warna latar belakang merah untuk transaksi keluar */
+}
+#userGreeting {
+    color: white;
+    font-weight: bold;
+}
+
+.form-control:focus {
+    border-color: #04968b;
+    box-shadow: 0 0 8px #70dbdb;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:hover, .form-select:hover {
+    background-color: #e8f0fe; /* Warna latar belakang yang lebih terang */
+    border-color: #007bff; /* Warna border yang lebih menonjol */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Menambahkan bayangan */
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #04968b;
+    box-shadow: 0 0 8px #70dbdb;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:hover, .form-select:hover {
+    background-color: #e8f0fe; /* Warna latar belakang yang lebih terang */
+    border-color: #007bff; /* Warna border yang lebih menonjol */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Menambahkan bayangan */
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+@keyframes animateGradient {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: linear-gradient(-45deg, #056f00, #0d8b1c, #14b334, #1fdc4e, #45e567, #6cee7d, #93f794, #baffab, #aef712, #69f51ecc, #01b555, #23d5ab);
+    background-size: 800% 800%;
+    animation: animateGradient 5s ease infinite;
+}
+

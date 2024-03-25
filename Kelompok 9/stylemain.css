@@ -1,0 +1,147 @@
+
+
+
+.container {
+    text-align: center;
+    font-family: calibri;
+}
+.navbar-nav a {
+    color: white;
+    font-weight: bold;
+}
+.navbar-nav a:hover{
+    color: green;
+}
+.navbar-nav a.active,
+.navbar-nav a:hover {
+    color: green !important;
+}
+/* style.css */
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: lightseagreen;
+}
+
+.navbar-brand img {
+    max-width: 50px;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Transaction item styling */
+.transaction-item {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .navbar-toggler {
+        order: -1;
+    }
+}
+#userGreeting {
+    color: white;
+    font-weight: bold;
+}
+body {
+    background-color: turquoise; /* Ubah warna latar belakang menjadi biru muda */
+}
+    /* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Balance and Transaction Styling */
+#saldoInfo {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    animation: slideIn 0.5s ease-out forwards;
+    opacity: 0;
+    transform: translateX(-30%);
+}
+
+#transactionList {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    animation: fadeIn 0.5s ease-out;
+}
+
+.transaction-item {
+    animation: fadeIn 0.5s ease-out;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.income, .outcome {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.income {
+    background-color: #ccffcc;
+}
+
+.outcome {
+    background-color: #ffcccc;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
+    }
+
+    #saldoInfo, #transactionList {
+        width: 100%;
+    }
+}
+
+
+
+
+    

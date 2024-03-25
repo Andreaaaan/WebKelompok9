@@ -1,0 +1,138 @@
+.container {
+    text-align: center;
+    font-family: calibri;
+}
+.navbar-nav a {
+    color: white;
+    font-weight: bold;
+}
+.navbar-nav a:hover{
+    color: green;
+}
+.navbar-nav a.active,
+.navbar-nav a:hover {
+    color: green !important;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  .member h3,
+.member p {
+    color: white;
+    font-weight: bold;
+}
+
+
+  .member {
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  .member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .member img:hover {
+    transform: scale(1.1);
+  }
+  .navbar {
+    background-color: #4CAF50; /* Hijau */
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: white; /* Set latar belakang putih */
+  background-image: url("gambar/indonesian-rupiah-money-paper-free-vector.jpg"); /* Ganti 'gambar_anda.jpg' dengan URL atau path ke gambar yang ingin Anda gunakan */
+  background-size: cover; /* Biarkan gambar menutupi seluruh latar belakang */
+  background-position: center; /* Posisi gambar di tengah */
+}
+.background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("gambar/indonesian-rupiah-money-paper-free-vector.jpg"); /* Gambar latar belakang */
+  background-size: cover; /* Biarkan gambar menutupi seluruh latar belakang */
+  background-position: center; /* Posisi gambar di tengah */
+  opacity: 0.7; /* Atur opasitas gambar */
+  z-index: -1; /* Pastikan lapisan berada di belakang konten */
+}
+
+.container {
+  position: relative; /* Tetapkan posisi relatif */
+  z-index: 2; /* Pastikan konten berada di depan lapisan latar belakang */
+  background-color: rgba(255, 255, 255, 0.5); /* Warna latar belakang dengan opacity */
+  border-radius: 5px; /* Tambahkan border-radius sesuai kebutuhan */
+  padding: 20px; /* Tambahkan padding sesuai kebutuhan */
+  backdrop-filter: blur(2px); /* Efek blur untuk background */
+}
+
+.member {
+  display: flex; /* Menggunakan flexbox */
+  flex-direction: column; /* Menata elemen secara vertikal */
+  align-items: center; /* Menyamakan posisi elemen secara horizontal */
+  margin: 20px;
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.member h3,
+.member p {
+  color: black;
+  font-weight: bold;
+  margin-top: 10px; /* Menambahkan jarak atas antara nama dan posisi */
+}
+#userGreeting {
+  color: white;
+  font-weight: bold;
+}
+
+@keyframes animateGradient {
+  0%, 100% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: linear-gradient(-45deg, #066f005b, #0d8b1c5f, #14b33463, #1fdc4e53, #45e56860, #6cee7d5c, #93f79551, #baffab, #aff7126f, #69f51e41, #01b55560, #23d5ab46);
+  background-size: 800% 800%;
+  animation: animateGradient 5s ease infinite;
+}
+
+
+
+
+

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylemain.css" />
+    <style>
+        @keyframes animateGradient {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background: linear-gradient(-45deg, #056f00, #0d8b1c, #14b334, #1fdc4e, #45e567, #6cee7d, #93f794, #baffab, #aef712, #69f51ecc, #01b555, #23d5ab);
+            background-size: 800% 800%;
+            animation: animateGradient 5s ease infinite;
+        }
+
+        .nav-link:hover,
+        .navbar-toggler:hover,
+        .transaction-item:hover,
+        #saldoInfo:hover,
+        .income:hover,
+        .outcome:hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .transaction-item:hover,
+        #saldoInfo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-toggler:hover {
+            background-color: #cccccc;
+        }
+
+        .nav-link:hover {
+            color: #00ff00;
+            transform: scale(1.1);
+        }
+
+        .income:hover,
+        .outcome:hover {
+            background-color: #ddf;
+            transition: background-color 0.5s ease, transform 0.3s ease;
+        }
+
+        .income,
+        .outcome {
+            background-color: #ccffcc;
+            color: black;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .outcome {
+            background-color: #ffcccc;
+        }
+
+        .container {
+            text-align: center;
+            font-family: calibri;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .navbar {
+            background: linear-gradient(-45deg, #056f00, #0d8b1c, #14b334, #1fdc4e, #45e567, #6cee7d, #93f794, #baffab, #aef712, #69f51ecc, #01b555, #23d5ab);
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+            backdrop-filter: saturate(180%) blur(5px);
+            opacity: 0.95;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .navbar-toggler {
+            border: none;
+            background-color: transparent !important;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .navbar-nav a {
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+        }
+
+        .navbar-nav a:hover, .navbar-nav .active {
+            color: #aef712;
+            text-decoration: none;
+        }
+
+        .navbar-brand img {
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand img:hover {
+            transform: scale(1.1);
+        }
+
+        #userGreeting {
+            transition: color 0.3s ease;
+        }
+
+        #userGreeting:hover {
+            color: #aef712;
+        }
+
+        @media (max-width: 991px) {
+            .navbar-nav {
+                flex-direction: column;
+            }
+
+            .navbar-toggler {
+                order: -1;
+            }
+
+            .d-flex {
+                flex-direction: column;
+            }
+
+            #saldoInfo, #transactionList {
+                width: 100%;
+                background-color: #f2f2f2;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                margin-bottom: 20px;
+                transition: transform 0.3s ease, box-shadow 0.5s ease;
+                text-align: left;
+            }
+        }
+    </style>
+    <style>
+        body {
+            padding-top: 70px; 
+        }
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 mb-5 fixed-top">
+        <div class="container-fluid pt-2 pb-2" style="background-color: lightseagreen;">
+            <img src="gambar/money.png" alt="Money Tracker Image" style="max-width: 5%;" class="me-4">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="width: 95%; display: flex; justify-content: space-between;">
+                    <li class="nav-item">
+                        <span class="nav-link" id="userGreeting"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " href="main.html">Main</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="income.html">Income</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="outcome.html">Outcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <div class="container pt-5 d-flex flex-wrap">
+        <div id="saldoInfo" class="col-md-4 mb-4"></div>
+        <div id="transactionList" class="col-md-8 mb-4"></div>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            var username = localStorage.getItem('username');
+            if (username) {
+                document.getElementById('userGreeting').textContent = "Hello, " + username + "!";
+            }
+
+            var transactions = JSON.parse(localStorage.getItem('transactions')) || [];
+            var totalIncome = 0; 
+            var totalOutcome = 0; 
+            
+            var transactionList = document.getElementById('transactionList');
+            
+            transactions.forEach(function(transaction) {
+                var transactionItem = document.createElement('div');
+                transactionItem.className = 'transaction-item';
+                
+                if (transaction.fromIncome) {
+                    transactionItem.classList.add('income'); 
+                } else {
+                    transactionItem.classList.add('outcome');
+                }
+
+                if (transaction.fromIncome) {
+                    totalIncome += parseFloat(transaction.nominal); 
+                } else {
+                    totalOutcome += parseFloat(transaction.nominal); 
+                }
+
+                var transactionDetails = document.createElement('p');
+                transactionDetails.textContent = transaction.name + ' - ' + transaction.nominal + ' - ' + transaction.type;
+                transactionItem.appendChild(transactionDetails);
+
+                transactionList.appendChild(transactionItem);
+            });
+
+            var totalSaldo = totalIncome - totalOutcome;
+
+            var saldoInfo = document.getElementById('saldoInfo');
+            saldoInfo.innerHTML = '<p>Total Saldo: ' + totalSaldo + '</p>';
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-c6O/Ck8Lc7b8E2s3TnC5Vz2r5JGzR3BdqyM8iEaODlSkL7/OCzA1OK1+V/4I8hbL" crossorigin="anonymous"></script>
+</body>
+</html>
+
+           
